@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Autoclicker Bookmarklet</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://miro.medium.com/max/280/0*oa0XcvM99Y5clDsj.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>
+      Autoclicker75
+    </h1>
+    <p>
+      Scroll down for more stuff<br>
+      I also made a gihub page since this page went down so here it is: <a href="https://github.com/Piplup7575/bookmarkletscripts">https://github.com/Piplup7575/bookmarkletscripts</a>
+    </p>
+    <p>
+      Here is an autoclicker! Drag the button below into your bookmarks bar and
+      click on it on any website, then it will run and click for you!<br />
+      To use: Click on the bookmarklet, choose your time delay, than move your
+      mouse to where you want the clicker to click!
+      <strong>*UPDATE*</strong> Stop autoclicker finshed and released!
+      Sorry!
+    </p>
+    <img
+      src="https://miro.medium.com/max/280/0*oa0XcvM99Y5clDsj.png"
+      height="200px"
+    />
+    <a
+      class="bookmark"
+      href="javascript:clicker:{const{Number}=self;const milliseconds=Number.parseInt(self.prompt('Time (Sec) untill click again? (I recommend setting it to 1)','1'));if(false===Number.isSafeInteger(milliseconds)){self.alert('Input was not an integer');break clicker;}let clientX=0,clientY=0;const{document}=self;self.setInterval(()=>{document.elementFromPoint(clientX,clientY)?.click?.();},milliseconds);document.addEventListener('mousemove',event=>{({clientX,clientY}=event);},{passive:true});}"
+    >
+      Auto Clicker</a
+    >
+    <br />
+    <a
+      class="bookmark"
+      href="#"
+      onclick="javascript:(function(i,x){x=setTimeout(function(){},9);for(;i++<x;)clearTimeout(i);x=setInterval(function(){},9);for(i=0;i++<x;)clearInterval(i)})(0);"
+      >Stop Clicker</a
+    >
+    <p>
+      Created by: R Wood (Piplup7575)<br /><a
+        href="https://soundcloud.com/piplup7575"
+        >My Music</a
+      >
+      <a href="https://home-of-piplup7575.glitch.me/">Main Site</a>
+      <a href="https://codeprojects.org/9KN8DQUnyYP_6JzMYlOjkUDMT-AOQwm7_WUBgXha_Ss/">Hackerman</a>
+    </p>
+
+    <div class="testArea">
+      
+    <p>
+      Here is a place to test the clicker, click the button to cause the counter
+      to go up!
+    </p>
+
+    <script type="text/javascript">
+      var clicks = 0;
+      function hello() {
+        clicks += 1;
+        document.getElementById("clicks").innerHTML = clicks;
+      }
+    </script>
+    <button type="button" onclick="hello()">Click me</button>
+      <div class="counter">
+    <p>Clicks: <a id="clicks">0</a></p>
+      </div>
+    </div>
+    
+    <h2>New Crap!</h2>
+    
+    <p>Here is some other crap I've been working on (all made by me):<br>
+    <strong>I am not responcible for anything that might happen to your computer or any punshments that may ocour if you use these scripts durng class.</strong></p>
+    <p>To close any of these, reload the page.</p>
+    
+    <p>Close the PopUpBrowser bookmarklet when run: </p>
+    <p class="js">javascript:var element = document.getElementById("javascriptclose"); element.parentNode.removeChild(element);</p>
+    
+    <p>Open a search engine in any html page (PopUpBrowser): </p>
+    <p class="js">javascript:((function()%7Bvar a,b,c;c="https://www.bing.com/",b=document.createElement("iframe"),b.setAttribute("src",c),b.setAttribute("id","javascriptclose"),b.setAttribute("style","position: fixed; z-index: 999999; width: 1333px; height: 768px; right: 10px; top: 10px; border: 5px solid #00FFFF; overflow: hidden; background-color: #fff;"),a=document.getElementsByTagName("body")%5B0%5D,a.appendChild(b)%7D)).call(this)</p>
+    
+    <p>Cloak your url/favicon of any page to look like the schoology home page:</p>
+    <p class="js">javascript:function gcloak() { var link = document.querySelector("link[rel*='icon']") || document.createElement('link');link.type = 'image/x-icon';link.rel = 'shortcut icon';link.href = 'https://asset-cdn.schoology.com/sites/all/themes/schoology_theme/favicon.ico';document.title = 'Home | Schoology';console.log(document.title);document.getElementsByTagName('head')[0].appendChild(link) };gcloak();setInterval(gcloak, 1000);</p>
+     
+    <p>Cloak your url/favicon of any page to look like the drive.google.com :</p>
+    <p class="js">javascript:function gcloak() { var link = document.querySelector("link[rel*='icon']") || document.createElement('link');link.type = 'image/x-icon';link.rel = 'shortcut icon';link.href = 'https://ssl.gstatic.com/docs/doclist/images/infinite_arrow_favicon_5.ico';document.title = 'My Drive – Google Drive';console.log(document.title);document.getElementsByTagName('head')[0].appendChild(link) };gcloak();setInterval(gcloak, 1000);</p>
+
+    </body>
+</html>
+
+javascript:document.body.contentEditable = true; void 0;  
+
+javascript:document.body.contentEditable = 'false'; document.designMode='off'; void 0

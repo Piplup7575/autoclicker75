@@ -1,0 +1,47 @@
+/* Fonts from Google Fonts - https://fonts.google.com */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
+@import url("https://fonts.googleapis.com/css?family=Merriweather:400,700");
+@import url("https://fonts.googleapis.com/css?family=VT323:400,700");
+
+body {
+  font-family: "Open Sans", sans-serif;
+  padding: 5px 25px;
+  font-size: 18px;
+  margin: 0;
+  color: #222222;
+  text-align: center;
+  background-color: lightblue;
+}
+
+.bookmark {
+  display: block;
+  cursor: pointer;
+  background: #f073ab;
+  font-size: 18px;
+  font-family: "Ariel", sans-serif;
+  color: #fff;
+  text-align: center;
+  width: calc(17px) rem;
+  padding: 20px;
+  border-radius: 30px;
+  font-weight: 400;
+  line-height: 1.4rem;
+  box-shadow: 0 2px 0 #e04164;
+  text-decoration: none;
+  width: 22rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.testArea {
+  border: 4px dashed green;
+}
+
+.counter {
+  font-family: "VT323";
+  font-size: 24px;
+}
+
+.js {
+  font-family: 'VT323', monospace;
+}
